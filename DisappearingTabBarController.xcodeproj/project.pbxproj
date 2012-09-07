@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		561FFE63155F8C89002A9F7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 561FFE62155F8C89002A9F7D /* UIKit.framework */; };
+		561FFE65155F8C89002A9F7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 561FFE64155F8C89002A9F7D /* Foundation.framework */; };
+		561FFE67155F8C89002A9F7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 561FFE66155F8C89002A9F7D /* CoreGraphics.framework */; };
+		561FFE6D155F8C89002A9F7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 561FFE6B155F8C89002A9F7D /* InfoPlist.strings */; };
+		561FFE6F155F8C89002A9F7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 561FFE6E155F8C89002A9F7D /* main.m */; };
+		561FFE73155F8C89002A9F7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 561FFE72155F8C89002A9F7D /* AppDelegate.m */; };
+		561FFE8A155FB448002A9F7D /* VCHidingTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 561FFE89155FB448002A9F7D /* VCHidingTabBarController.m */; };
+		5673049015F6EF9700C3A189 /* UIView+FindIndexOfSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = 5673048F15F6EF9700C3A189 /* UIView+FindIndexOfSubview.m */; };
+		56B2688D15F999A600A0E495 /* GreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B2688B15F999A600A0E495 /* GreenViewController.m */; };
+		56B2688E15F999A600A0E495 /* GreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B2688C15F999A600A0E495 /* GreenViewController.xib */; };
+		56E8B6E51567443C0065E6F9 /* libobjc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E8B6E41567443C0065E6F9 /* libobjc.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		561FFE5E155F8C89002A9F7D /* DisappearingTabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisappearingTabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		561FFE62155F8C89002A9F7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		561FFE64155F8C89002A9F7D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		561FFE66155F8C89002A9F7D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		561FFE6A155F8C89002A9F7D /* DisappearingTabBarController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DisappearingTabBarController-Info.plist"; sourceTree = "<group>"; };
+		561FFE6C155F8C89002A9F7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		561FFE6E155F8C89002A9F7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		561FFE70155F8C89002A9F7D /* DisappearingTabBarController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DisappearingTabBarController-Prefix.pch"; sourceTree = "<group>"; };
+		561FFE71155F8C89002A9F7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		561FFE72155F8C89002A9F7D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		561FFE88155FB448002A9F7D /* VCHidingTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCHidingTabBarController.h; sourceTree = "<group>"; };
+		561FFE89155FB448002A9F7D /* VCHidingTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCHidingTabBarController.m; sourceTree = "<group>"; };
+		5673048E15F6EF9700C3A189 /* UIView+FindIndexOfSubview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FindIndexOfSubview.h"; sourceTree = "<group>"; };
+		5673048F15F6EF9700C3A189 /* UIView+FindIndexOfSubview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FindIndexOfSubview.m"; sourceTree = "<group>"; };
+		56B2688A15F999A600A0E495 /* GreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenViewController.h; sourceTree = "<group>"; };
+		56B2688B15F999A600A0E495 /* GreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenViewController.m; sourceTree = "<group>"; };
+		56B2688C15F999A600A0E495 /* GreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GreenViewController.xib; sourceTree = "<group>"; };
+		56E8B6E41567443C0065E6F9 /* libobjc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.dylib; path = usr/lib/libobjc.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		561FFE5B155F8C89002A9F7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56E8B6E51567443C0065E6F9 /* libobjc.dylib in Frameworks */,
+				561FFE63155F8C89002A9F7D /* UIKit.framework in Frameworks */,
+				561FFE65155F8C89002A9F7D /* Foundation.framework in Frameworks */,
+				561FFE67155F8C89002A9F7D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		561FFE53155F8C88002A9F7D = {
+			isa = PBXGroup;
+			children = (
+				561FFE68155F8C89002A9F7D /* DisappearingTabBarController */,
+				561FFE61155F8C89002A9F7D /* Frameworks */,
+				561FFE5F155F8C89002A9F7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		561FFE5F155F8C89002A9F7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				561FFE5E155F8C89002A9F7D /* DisappearingTabBarController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		561FFE61155F8C89002A9F7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56E8B6E41567443C0065E6F9 /* libobjc.dylib */,
+				561FFE62155F8C89002A9F7D /* UIKit.framework */,
+				561FFE64155F8C89002A9F7D /* Foundation.framework */,
+				561FFE66155F8C89002A9F7D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		561FFE68155F8C89002A9F7D /* DisappearingTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				561FFE71155F8C89002A9F7D /* AppDelegate.h */,
+				561FFE72155F8C89002A9F7D /* AppDelegate.m */,
+				561FFE88155FB448002A9F7D /* VCHidingTabBarController.h */,
+				561FFE89155FB448002A9F7D /* VCHidingTabBarController.m */,
+				5673048E15F6EF9700C3A189 /* UIView+FindIndexOfSubview.h */,
+				5673048F15F6EF9700C3A189 /* UIView+FindIndexOfSubview.m */,
+				56B2688A15F999A600A0E495 /* GreenViewController.h */,
+				56B2688B15F999A600A0E495 /* GreenViewController.m */,
+				56B2688C15F999A600A0E495 /* GreenViewController.xib */,
+				561FFE69155F8C89002A9F7D /* Supporting Files */,
+			);
+			path = DisappearingTabBarController;
+			sourceTree = "<group>";
+		};
+		561FFE69155F8C89002A9F7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				561FFE6A155F8C89002A9F7D /* DisappearingTabBarController-Info.plist */,
+				561FFE6B155F8C89002A9F7D /* InfoPlist.strings */,
+				561FFE6E155F8C89002A9F7D /* main.m */,
+				561FFE70155F8C89002A9F7D /* DisappearingTabBarController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		561FFE5D155F8C89002A9F7D /* DisappearingTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 561FFE7C155F8C89002A9F7D /* Build configuration list for PBXNativeTarget "DisappearingTabBarController" */;
+			buildPhases = (
+				561FFE5A155F8C89002A9F7D /* Sources */,
+				561FFE5B155F8C89002A9F7D /* Frameworks */,
+				561FFE5C155F8C89002A9F7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DisappearingTabBarController;
+			productName = DisappearingTabBarController;
+			productReference = 561FFE5E155F8C89002A9F7D /* DisappearingTabBarController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		561FFE55155F8C88002A9F7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 561FFE58155F8C88002A9F7D /* Build configuration list for PBXProject "DisappearingTabBarController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 561FFE53155F8C88002A9F7D;
+			productRefGroup = 561FFE5F155F8C89002A9F7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				561FFE5D155F8C89002A9F7D /* DisappearingTabBarController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		561FFE5C155F8C89002A9F7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				561FFE6D155F8C89002A9F7D /* InfoPlist.strings in Resources */,
+				56B2688E15F999A600A0E495 /* GreenViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		561FFE5A155F8C89002A9F7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				561FFE6F155F8C89002A9F7D /* main.m in Sources */,
+				561FFE73155F8C89002A9F7D /* AppDelegate.m in Sources */,
+				561FFE8A155FB448002A9F7D /* VCHidingTabBarController.m in Sources */,
+				5673049015F6EF9700C3A189 /* UIView+FindIndexOfSubview.m in Sources */,
+				56B2688D15F999A600A0E495 /* GreenViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		561FFE6B155F8C89002A9F7D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				561FFE6C155F8C89002A9F7D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		561FFE7A155F8C89002A9F7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		561FFE7B155F8C89002A9F7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		561FFE7D155F8C89002A9F7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DisappearingTabBarController/DisappearingTabBarController-Prefix.pch";
+				INFOPLIST_FILE = "DisappearingTabBarController/DisappearingTabBarController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		561FFE7E155F8C89002A9F7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DisappearingTabBarController/DisappearingTabBarController-Prefix.pch";
+				INFOPLIST_FILE = "DisappearingTabBarController/DisappearingTabBarController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		561FFE58155F8C88002A9F7D /* Build configuration list for PBXProject "DisappearingTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				561FFE7A155F8C89002A9F7D /* Debug */,
+				561FFE7B155F8C89002A9F7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		561FFE7C155F8C89002A9F7D /* Build configuration list for PBXNativeTarget "DisappearingTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				561FFE7D155F8C89002A9F7D /* Debug */,
+				561FFE7E155F8C89002A9F7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 561FFE55155F8C88002A9F7D /* Project object */;
+}
