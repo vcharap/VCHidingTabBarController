@@ -52,7 +52,7 @@ NSString* const TabBarHidden = @"TabBarHidden";
     
     _tabBarController = [[VCHidingTabBarController alloc] init];
     _tabBarController.viewControllers = [NSArray arrayWithObjects:nav, cont1, cont2, nil];
-    
+    _tabBarController.resize = YES;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tabBarNotification:) name:ChangeTabBarVisibilityNotification object:nil];
     
     [self.window addSubview:_tabBarController.view];

@@ -42,7 +42,7 @@
 
 @property (nonatomic, retain) UIViewController* realCurrentController;
 @property (nonatomic) NSUInteger realSelectedIndex;
-
+@property (nonatomic, readonly) UIView* containerView;
 
 @property BOOL barVisible;
 
@@ -53,6 +53,8 @@
 @synthesize selectedIndex = _selectedIndex;
 @synthesize realCurrentController = _realCurrentController, realSelectedIndex = _realSelectedIndex;
 @synthesize barVisible = _barVisible, hideDuration = _hideDuration;
+@synthesize containerView = _containerView;
+@synthesize resize;
 
 #pragma mark Properties
 
@@ -129,8 +131,14 @@
     CGRect frame = CGRectMake(0, 0, 320, 480);
     UIView *view = [[[UIView alloc] initWithFrame:frame] autorelease];
     
+    if(_resize){
+        frame = CGRectMake(0, 0, 320, frame.size.height - _tabBar.frame.size.height);
+    }
+    
+    _containerView = [[UIView alloc] initWithFrame:frame];
+    [view addSubview:_containerView];
     [view addSubview:_tabBar];
-    view.backgroundColor = [UIColor redColor];
+    view.backgroundColor = [UIColor blackColor];
     self.view = view;
 }
 
@@ -180,6 +188,8 @@
     
     for(UIViewController* controller in self.viewControllers){
         controller.view = nil;
+        
+        //not sure if this should be called by me.
         //[controller viewDidUnload];
     }
     
@@ -227,6 +237,9 @@
         
         [UIView animateWithDuration:self.hideDuration animations:^{
             self.tabBar.frame = frame;
+            if(_resize){
+                self.containerView.frame = CGRectMake(0, 0, 320, frame.origin.y);
+            }
         } completion:^(BOOL finished) {
             if(finished){
                 [self informDelegateOfAnimationWithSelector:afterCallback];
@@ -236,6 +249,10 @@
     }
     else{
         self.tabBar.frame = frame;
+        if(_resize){
+            self.containerView.frame = CGRectMake(0, 0, 320, frame.origin.y);
+        }
+        
         self.barVisible = visible;
         [self informDelegateOfAnimationWithSelector:afterCallback];
     }
@@ -274,7 +291,7 @@
         //remove current controller's view from heirarchy
         //
         if(self.realCurrentController){
-            NSInteger index = [self.view indexOfSubview:self.realCurrentController.view];
+            NSInteger index = [self.containerView indexOfSubview:self.realCurrentController.view];
             if(index != NSNotFound){
                 if(isVisible){
                     [self informController:self.realCurrentController ofViewWillDisappear:YES];
@@ -307,7 +324,7 @@
             [self.realCurrentController viewDidLoad];
         }
         
-        [self.view insertSubview:self.realCurrentController.view atIndex:VISIBLE_SUBVIEW_INDEX];
+        [self.containerView insertSubview:self.realCurrentController.view atIndex:VISIBLE_SUBVIEW_INDEX];
         
         if(isVisible){
             [self informController:self.realCurrentController ofViewWillAppear:NO];

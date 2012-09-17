@@ -38,10 +38,6 @@
         There are currently some limitations. 
  
             1. The controller must be loaded programatically and can not be instantiated from a nib.
-            2. The controller's view frame takes up the whole screen (320 by 480). Your controllers' views are placed into this view,
-            and thus will also have a frame size that is the whole screen (320x480). The UITabBar will sit on top, partially
-            obscuring your views. This is a potentially serious limitation. A future update will allow for the option
-            of having a container view that is sized to sit above the tabBar into which your views will go.
  
             3. "More Controller" is currently not implimented. Instead the
             controller can hold up to 5 different controllers. 
@@ -53,12 +49,11 @@
 @interface VCHidingTabBarController : UIViewController <UITabBarDelegate>
 {
 @private
+    UIView* _containerView;
     UITabBar *_tabBar;
-    NSArray *_viewContorllers;
     id<UITabBarControllerDelegate> _delegate;
     
     NSArray *_viewControllers;
-
     
     UIViewController *_realCurrentController;
     NSUInteger _realSelectedIndex;
@@ -67,6 +62,7 @@
     NSUInteger _selectedIndex;
     
     BOOL _visible;
+    BOOL _resize;
     
     NSTimeInterval _hideDuration;
     CGRect _visibleFrame;
@@ -98,6 +94,18 @@
  */
 @property (nonatomic) NSTimeInterval hideDuration;
 
+
+/*
+ @abstract
+        Determines if the view of a contained view controller is resized
+        when the tab bar is moved off screen. 
+        If set to NO, the "content area" will be the whol screen, meaning the contained view will take up the full screen, and be
+        partly obscured by a tab bar in visible state.
+        
+        If set to YES, the contained view will we resized to fit within the "content area", changing in size
+        as the tab bar is hidden/shown.
+*/
+@property (nonatomic) BOOL resize;
 /*
  @abstract
         Hides the tab bar. willHideTabBar and didHideTabBar are 
